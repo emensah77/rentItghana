@@ -85,11 +85,13 @@ h6 {
 .h1-large {
     font-size: 2.875rem;
     line-height: 3.5rem;
+    color: white;
 }
 
 .p-large {
     font-size: 1.125rem;
     line-height: 1.75rem;
+    color: white;
 }
 
 .p-small {
@@ -132,8 +134,8 @@ h6 {
     padding: 1.625rem 2.75rem 1.625rem 2.75rem;
     border: 1px solid #594cda;
     border-radius: 32px;
-    background-color: #594cda;
-    color: #ffffff;
+    background-color: white;
+    color: blue;
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 0;
@@ -145,9 +147,9 @@ h6 {
 }
 
 .btn-solid-lg:hover {
-    border: 1px solid #594cda;
-    background-color: transparent;
-    color: #594cda; /* needs to stay here because of the color property of a tag */
+    border: 1px solid white;
+    background-color: blue;
+    color: white; /* needs to stay here because of the color property of a tag */
     text-decoration: none;
 }
 
@@ -163,14 +165,23 @@ h6 {
 }
 
 .btn-solid-lg.secondary {
-    border: 1px solid #eb427e;
-    background-color: #eb427e;
+    border: 1px solid white;
+    background-color: white;
 }
-
+.btn-solid-lg.secondary1 {
+    border: 1px solid white;
+    background-color: blue;
+    color: white;
+}
 .btn-solid-lg.secondary:hover {
-    border: 1px solid #eb427e;
-    background: transparent;
-    color: #eb427e; /* needs to stay here because of the color property of a tag */
+    border: 1px solid white;
+    background: blue;
+    color: white; /* needs to stay here because of the color property of a tag */
+}
+.btn-solid-lg.secondary1:hover {
+    border: 1px solid blue;
+    background: white;
+    color: blue; /* needs to stay here because of the color property of a tag */
 }
 
 .btn-outline-reg {
@@ -473,7 +484,7 @@ input[type="checkbox"] {
     display: block;
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
-    color: #6b747b;
+    color: black;
     text-decoration: none;
     line-height: 0.875rem;
     transition: all 0.2s ease;
@@ -501,7 +512,7 @@ input[type="checkbox"] {
 .dropdown.show > a,
 .nav-link:hover,
 .nav-link.active {
-    color: #ff6e84;
+    color: gray;
     text-decoration: none;
 }
 
@@ -573,9 +584,19 @@ input[type="checkbox"] {
 /*    Header     */
 /*****************/
 .header {
-    background: linear-gradient(rgba(197, 234, 249, 1), rgba(255, 255, 255, 1));
+    
+    background: linear-gradient(90deg, rgb(10, 14, 219) 14%, rgba(0,229,255,1) 100%);
+    
+}
+.inline{
+    height: max-content;
+    width:max-content;
+    object-fit: cover;
 }
 
+.header .container{
+    align-items: center;
+}
 /********************/
 /*     Features     */
 /********************/
